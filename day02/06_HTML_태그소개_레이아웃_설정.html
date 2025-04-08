@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_HTML_태그소개_레이아웃_설정</title>
+    <!-- 내부 방식으로 스타일 적용 -->
+    <style>
+        /* 상단영역 : header */
+        #header {
+            /* 배경색 dimgray, 글자색 floralwhite, 텍스트 중앙정렬, 내부여백 5px */
+            background-color: dimgray;
+            color: floralwhite;
+            text-align: center;
+            padding: 5px;
+        }
+
+        /* 카테고리 메뉴(네비게이션) : nav */
+        #nav {
+            /* 배경색 원하는색, 너비 100%, 높이 30px, 텍스트 중앙정렬, 내부여백 10px */
+            background-color: floralwhite;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* 본문영역 : section1 */
+        #section1 {
+            /* 배경색 lightgray, 너비 48%, 안쪽여백 10px,  */
+            background-color: lightgray;
+            width: 48%;
+            float: left;
+            padding: 10px;
+        }
+
+        /* 본문영역 : section2 */
+        #section2 {
+            /* 배경색 darkgray, 너비 48%, 안쪽여백 10px,  */
+            background-color: darkgray;
+            width: 48%;
+            float: left;
+            padding: 10px;
+        }
+
+        /* 하단영역 : footer */
+        #footer {
+            /* 배경색 원하는 색, 글자색 원하는색, 텍스트 중앙정렬, 안쪽여백 5px,  */
+            background-color: slategrey;
+            color: floralwhite;
+            text-align: center;
+            padding: 5px;
+            /* 앞쪽 float을 적용하지 않겠다는 정의 */
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>06_HTML_태그소개_레이아웃_설정</h2>
+    <hr/>
+    <!--
+        * 화면구성 *
+         - 상단영역 : header
+         - 카테고리 메뉴(네비게이션) : nav
+         - 본문영역 : section1, section2
+         - 하단영역 : footer
+    -->
+
+    <!-- 상단영역 : header -->
+    <div id="header">
+        <h3>상단</h3>
+    </div>
+
+    <!-- 카테고리 메뉴(네비게이션) : nav -->
+    <div id="nav">
+        <a href="./index.html">HOME</a>
+        <a href="./01_HTML_태그소개_a링크_스타일적용하기.html">01_바로가기</a>
+        <a href="./02_HTML_태그소개_Table정의.html">02_바로가기</a>
+        <a href="./03_HTML_태그소개_Table스타일적용.html">03_바로가기</a>
+        <a href="./04_HTML_태그소개_목록-표식_생성.html">04_바로가기</a>
+    </div>
+
+    <!-- 본문영역 : section1 -->
+    <div id="section1">
+        <h4>공지사항</h4>
+        <ul>
+            <li>[필독] 금일 공지사항1</li>
+            <li>[필독] 금일 공지사항2</li>
+            <li>[필독] 금일 공지사항3</li>
+            <li>[필독] 금일 공지사항4</li>
+            <li>[필독] 금일 공지사항5</li>
+        </ul>
+    </div>
+
+    <!-- 본문영역 : section2 -->
+    <div id="section2">
+        <h4>질문사항</h4>
+        <ul>
+            <li>[필독] 금일 질문/답변1</li>
+            <li>[필독] 금일 질문/답변2</li>
+            <li>[필독] 금일 질문/답변3</li>
+            <li>[필독] 금일 질문/답변4</li>
+            <li>[필독] 금일 질문/답변5</li>
+        </ul>
+    </div>
+
+    <!-- 하단영역 : footer -->
+    <div id="footer">
+        <!-- 보통 하단에는 저작권에 대한 내용이 작성됨
+         (or 회사 소개, 개인정보 보호 등 같은 링크 포함) -->
+        <h5>COPYRIGHT C CORP. ALL RIGHTS RESERVED.</h5>
+    </div>
+</body>
+</html>
+
+<!-- 07_태그소개_내부프레임_iframe적용.html 생성 -->

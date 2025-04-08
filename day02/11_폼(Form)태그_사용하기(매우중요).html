@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11_폼(Form)태그_사용하기(매우중요)</title>
+
+    <!-- 자바스크립트 정의 -->
+    <script type="text/Javascript">
+        // 한줄주석
+        /* 여러줄 주석 */
+
+        // 함수 정의
+        function goPopup() {
+            // 팝업창 띄우기
+            alert('자바스크립트 함수가 호출되었습니다.');
+        }
+    </script>
+</head>
+<body>
+    <h2>11_폼(Form)태그_사용하기(매우중요)</h2>
+    <hr/>
+
+    <!-- Form 태그
+        - 사용자로부터 입력 또는 검색 시에 사용하는 태그
+        - 보통 자바스크립트(Javascript) 태그라고 칭함
+        - 페이지 제작 시 가장 많이 사용되는 태그임 
+        - 입력을 담당하는 태그 : input
+        - 입력 유향 (속성) : text, radio, checkbox, select, textarea
+        - 입력 태그에 입력된 내용을 전송할 때 사용하는태그
+            : 주로 button 또는 submit 또는 a태그 사용(클릭이 가능한 태그들임)
+        - 입력을 위해 사용되는 모든 태그들은 가급적 Form 태그 내에 존재해야 함
+        - 입력 태그에 입력된 정보를 전송하는 방법 : method 속성을 사용(post와 get 방식으로 전송됨) -->
+
+    <!-- Form 태그 속성
+        - action : 전송할 위치 지정(a태그의 href와 동일)
+        - method : 전송방식(post 또는 get)
+            * get : 전송 시 url에 입력값들(?key=value&key=value)을 붙혀서 보내는 방식
+            * post : 전송 시 url에 보이지 않게 보내는 방식
+        - id 또는 name : 해당 태그를 지정하기 위한 이름
+        - 입력되는 모든 값은 문자열(숫자를 입력해도 전송될 때 문자열로 전송) -->
+
+    <h3>텍스트 입력</h3>
+    <form id="fm" name="fm" action="./06_HTML_태그소개_레이아웃_설정.html" method="get"
+        oninput="x.value = parseInt(a.value) + parseInt(b.value)"> <!-- parseInt() : Int 타입으로 형변환 하는 함수 -->
+        <!-- 텍스트 박스 정의하기 : 텍스트 입력 받기
+            - type : 입력 서식 결정(text는 텍스트 입력 방식을 사용한다는 의미)
+            - name : 해당 입력값이 전송 될 때 Key로 사용
+            - value : 해당 입력값이 전송될 때 Value로 사용
+            - size : 텍스트 박스의 너비를 지정
+            - 전송 시 {name:value} 형태의 딕셔너리(Json)로 전송됨 {id:입력값, pw:입력값} -->
+        아이디 : <input type="text" name="id" value="a001" size="50"><br/>
+        패스워드 : <input type="password" name="pw" value="a001pw" size="50">
+        <hr/>
+        
+        <h3>텍스트 읽기전용</h3>
+        <!-- readonly : 읽기전용으로 만들기(입력불가)
+        - 수정페이지에서 수정하지 않아도 되는 입력박스에서 주로 사용 -->
+        아이디 : <input type="text" name="id1" value="a001" size="50" readonly><br/>
+        패스워드 : <input type="password" name="pw1" value="a001pw" size="50" readonly>
+        <hr/>
+        
+        <h3>입력박스 비활성화</h3>
+        <!-- disabled : 입력박스 비활성화 -->
+        아이디 : <input type="text" name="id1" value="a001" size="50" disabled><br/>
+        패스워드 : <input type="password" name="pw1" value="a001pw" size="50" disabled>
+        <hr/>
+        
+        <h3>입력길이 제한</h3>
+        <!-- maxlength : 입력길이 제한 -->
+        아이디 : <input type="text" name="id1" value="a001" size="50" maxlength="10"><br/>
+        패스워드 : <input type="password" name="pw1" value="a001pw" size="50" maxlength="10">
+        <hr/>
+        
+        <h3>radio 버튼처리</h3>
+        <!-- radio 버튼
+        - 하나의 성격을 가지는 값을 선택하고자 할 때 사용
+        - name은 같아야 함
+        - value 속성에 각 선택 되었을 때 전송할 값을 정의해야 함 -->
+        성별 :
+        <input type="radio" name="gender" value="m"> 남자
+        <input type="radio" name="gender" value="f"> 여자
+        <input type="radio" name="gender" value="o" checked> 선택안함 <!-- checked : 최초에 하나 선택하고 시작 -->
+        <hr/>
+        
+        <h3>checkbox 버튼처리</h3>
+        <!-- checkbox 버튼
+        - radio 버튼과 유사함
+        - 차이점은 여러개 체크가 가능
+        - value 속성에 각 선택 되었을 때 전송할 값을 정의해야 함 -->
+        취미 :
+        <input type="checkbox" name="like" value="m"> 영화
+        <input type="checkbox" name="like" value="s"> 음악
+        <input type="checkbox" name="like" value="b"> 독서
+        <input type="checkbox" name="like" value="o" checked> 선택안함
+        <hr/>
+        
+        <h3>Select 박스</h3>
+        <!-- Select 박스 -->
+        선호하는 자동차 회사 선택 :
+        <select name="cars">
+            <option value="volvo">volvo</option>
+            <option value="saab">saab</option>
+            <option value="audi">audi</option>
+        </select>
+        <hr/>
+        
+        <h3>datalist 박스</h3>
+        <!-- datalist 박스 -->
+        선호하는 브라우저 선택 :
+        <input list="browsers" name="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Crome"></option>
+            <option value="Whale"></option>
+        </datalist>
+        <hr/>
+        
+        <h3>범위 지정 태그</h3>
+        <!-- range 범위 지정 태그
+        - 값의 범위 : 0 ~ 100
+        - value : 최초의 선택될 값을 미리 지정 -->
+        범위를 지정해주세요 :
+        0 <input type="range" id="a" name="a" value="50"> 100
+        +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <hr/>
+        
+        <h3>버튼 처리</h3>
+        <!-- 버튼처리
+            - submit : 클릭하면 form 태그 내에 action에 정의한 위치로 페이지 전환
+                     : action이 # 으로 되어 있으면 페이지 전환하지 않겠다는 의미 -->
+        <input type="submit" value="저장하기">
+        <hr/>
+
+        <h3>버튼 생성</h3>
+        <!-- button : 버튼 생성
+            - onclick : 클릭 이벤트(클릭을 했을 때 이벤트 발생)
+            - alert : 팝업창 띄우는 자바스크립트 함수 -->
+        <button type="button" onclick="alert('누르지마!')">
+            저장하기 버튼
+        </button>
+        <hr/>
+
+        <h3>버튼 생성2</h3>
+        <button type="button" onclick="goPopup()">
+            자바스크립트 함수 호출
+        </button>
+    </form>
+</body>
+</html>

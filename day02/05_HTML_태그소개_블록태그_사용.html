@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05_HTML_태그소개_블록태그_사용</title>
+
+    <!-- 내부 방식으로 스타일 적용 -->
+    <style>
+        /* class 이름이 div_style1인 태그의 스타일 적용 */
+        /* 배경 : 회색, 텍스트 : 흰색, 안쪽여백 : 20px */
+        div.div_style1 {
+            background-color: dimgray;
+            color: floralwhite;
+            /* 내부 여백 */
+            padding: 20px;
+            /* 외부 여백 */
+            margin: 20px;
+        }
+
+        /* class 이름이 div_style2인 태그의 스타일 적용 */
+        /* 배경 : 회색, 텍스트 : 흰색, 안쪽여백 : 20px */
+        div.div_style2 {
+            background-color: darkslategrey;
+            color: floralwhite;
+            padding: 20px;
+            /* 외부 여백 */
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        블록을 처리하는 태그 : div 태그가 주로 사용됨
+        - 영역을 설정하는데 사용되며, 특별한 의미를 부여하지 않음
+        - 보통 레이어(화면) 구성에 주로 사용됨(영역 나누기)
+    -->
+    <h2>05_HTML_태그소개_블록태그(div)_사용</h2>
+    <hr/>
+
+    <div>
+        <h4>블록 태그</h4>
+        <p>
+            화면 구성 시 주로 사용함 <br/>
+            HTML 태그에서 의미를 가지지는 않으며, 영역을 표시하기 위해 주로 사용됨 <br/>
+            특정 영역을 지정하여 데이터 또는 특수한 이미지 등을 표현하고자 할 때 사용함 <br/>
+            보통 class 또는 id 속성과 함께 사용되며 <br/>
+            class 또는 id 이름을 이용해서 데이터 또는 이미지 등을 표현함 <br/>
+        </p>
+    </div>
+    <br/><hr/>
+
+    <div class="div_style1">
+        <h4>Lorem ipsum 1</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus eaque corporis deleniti, illo similique amet mollitia,
+        dignissimos repellat natus aut tenetur suscipit obcaecati quasi.
+        Consequatur quae quis vero voluptas blanditiis.
+    </div>
+
+    <div class="div_style2">
+        <h4>Lorem ipsum 2</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus eaque corporis deleniti, illo similique amet mollitia,
+        dignissimos repellat natus aut tenetur suscipit obcaecati quasi.
+        Consequatur quae quis vero voluptas blanditiis.
+    </div>
+
+    <div class="div_style1">
+        <h4>Lorem ipsum 3</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus eaque corporis deleniti, illo similique amet mollitia,
+        dignissimos repellat natus aut tenetur suscipit obcaecati quasi.
+        Consequatur quae quis vero voluptas blanditiis.
+    </div>
+
+    <div class="div_style2">
+        <h4>Lorem ipsum 4</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Necessitatibus eaque corporis deleniti, illo similique amet mollitia,
+        dignissimos repellat natus aut tenetur suscipit obcaecati quasi.
+        Consequatur quae quis vero voluptas blanditiis.
+    </div>
+</body>
+</html>
+
+<!-- 06_HTML_태그소개_레이아웃_설정.html 생성 -->

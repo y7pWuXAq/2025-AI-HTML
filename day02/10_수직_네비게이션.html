@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10_수직_네비게이션</title>
+    <style>
+        /* ul 태그 스타일 적용
+            - 표식기호 없애기, 배경색 원하는색, 여백 0px, 너비 : 200px */
+        ul {
+            list-style-type: none;
+            background-color: dimgray;
+            padding: 0px;
+            width: 200px;
+        }
+
+        /* li 태그 스타일 적용
+            - 텍스트 중앙정렬, 밑에 선그리기 1px */
+        li {
+            text-align: center;
+            border-bottom: 1px solid floralwhite;
+        }
+
+        /* li 태그 중 마지막 실선은 제거 */
+        li:last-child {
+            border-bottom: none;
+        }
+
+        /* li 태그 내에 a태그 스타일 적용
+            - 색상 자유롭게, 내부 여백 0px, 언더라인 없애기 */
+        li a {
+            color: floralwhite;
+            padding: 0px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* li 태그 내에 a태그에 마우스가 올라갔을 때 스타일 적용 */
+        li a:hover {
+            background-color: floralwhite;
+            color: dimgray;
+        }
+
+        /* HOME이 있는 a태그 영역 스타일 적용
+            - 배경색, 글자색 */
+        li a.active {
+            background-color: floralwhite;
+            color: dimgray;
+        }
+
+    </style>
+</head>
+<body>
+    <h2>10_수직_네비게이션</h2>
+    <hr/>
+    <ul>
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="#">DAUM</a></li>
+        <li><a href="#">NAVER</a></li>
+        <li><a href="#">GOOGLE</a></li>
+    </ul>
+</body>
+</html>
+
+
+<!-- 11_폼(Form)태그_사용하기(매우중요).html 생성 -->

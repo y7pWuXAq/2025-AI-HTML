@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01_HTML_태그소개_a링크_스타일적용하기</title>
+    <!-- CSS 내부 방식으로 정의하기 -->
+    <style>
+        /* CSS 주석 */
+        /* link : a 태그의 보여지는 방식에 대한 스타일 */
+        a:link {
+            /* 글자 색상을 녹색 */
+            color: cadetblue;
+            /* 배경색을 투명 */
+            background-color: transparent;
+            /* 별도의 장식을 하지 않음 */
+            text-decoration: none;
+        }
+
+        /* hover : 마우스가 올라갔을(over) 때 스타일 지정 */
+        a:hover {
+            /* 글자 색상을 녹색 */
+            color: dimgray;
+            /* 배경색을 투명 */
+            background-color: transparent;
+            /* 별도의 장식을 하지 않음 */
+            text-decoration: underline;
+        }
+        
+        /* visited : 클릭 이후 스타일 지정 */
+        a:visited {
+            /* 글자 색상을 녹색 */
+            color: darkolivegreen;
+            /* 배경색을 투명 */
+            background-color: transparent;
+            /* 별도의 장식을 하지 않음 */
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id ="top">01_HTML_태그소개_a링크_스타일적용하기</h2>
+    <hr/>
+
+    <h3> a 태그를 이용하여 현재 페이지의 특정 위치 찾아가기 </h3>
+    <a href="#tip" > tip 찾아가기 </a>
+
+    <!--
+        * 제목 사이즈 3으로 "a링크 정의" 작성
+        * 다음 바로가기, 네이버 바로가기 만들기
+    -->
+    <h3>a 링크 정의</h3>
+    <a href="http://daum.net" target="_blank"> <!-- _blank : 새 탭에서 열기-->
+        [다음 바로가기]
+    </a> |
+    <a href="http://naver.com" target="_top"> <!-- _top : 현재 창에서 페이지 열기 -->
+        [네이버 바로가기]
+    </a>|
+    <!--  * 상대경로 : 현재 작성하고 있는 파일의 위치를 기준으로 위치경로를 결정 
+                              : . 은 현재 위치를 기준으로 결정
+                              : ..은 현재 폴더 밖을 기준으로 결정
+                              : 파일(html, css, js, image 등..)의 경우 상대경로를 이용함
+                                    ( 작업 폴더의 위치가 바뀌어도 관리가 용이함)
+            * 절대경로 : 현재 작성하고 있는 파일의 최초 시작 위치부터의 경로를 의미
+                              : C:// ~ 부터 현재 위치까지의 모든 경로를 작성
+                              : 서버(Server)의 URL 경로를 사용할 때는 절대 경로를 이용함
+                              : 서버(Server)의 URL 절대 경로의 시작은 슬래시(/, root를 의미)로 시작함
+                                    (도메인 이름이 바뀌어도 관리가 용이함)
+    -->
+    <a href="../day02/01_HTML_태그소개_a링크_스타일적용하기.html" target="_self"> <!-- _self : 동일한 프레임 (현재 창과 유사)에서 페이지 열기 -->
+        [01.HTML 바로가기]
+    </a>
+    <hr/>
+
+    <h4 id="tip"> TIP은 여기! </h4>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, odit.
+    </p>
+
+    <a href="#top" > 위로 </a>
+</body>
+</html>
+
+<!-- 02_HTML_태그소개_Table정의.html 생성 -->
