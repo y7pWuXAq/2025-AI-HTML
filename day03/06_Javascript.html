@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06_Javascript</title>
+    <script type="text/javascript">
+        let cnt = 0;
+        let sum = 0;
+        function goMath(){
+            cnt++;
+            sum = sum + cnt;
+
+            let msg = cnt + " = " + sum;
+            document.getElementById("p1").innerHTML = msg;
+        }
+    </script>
+</head>
+<body>
+    <h1>06_Javascript :: 1씩 누적값 출력</h1>
+    <br/>
+
+    <p id="p1">여기에 출력</p>
+
+    <!-- 
+        - 1. 버튼 만들기 : 버튼에 보이는 값은 자유롭게
+        - 2. 버튼을 클릭하면 자바스크립트 함수 호출, 함수이름은 자유롭게
+        - 3. 함수 기능
+            - 버튼이 클릭 될 때마다 정수값을 1씩 증가하며 화면에 출력
+            - 누적된 값을 화면에 출력
+            - 보이는 위치 : p태그를 작성하여 p태그 내에 보이기
+    -->
+
+    <button type="button" onclick="goMath()">UP!</button>
+</body>
+</html>
