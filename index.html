@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>index</title>
+        <style>
+        table, td {
+            /* table 테두리 선 스타일 지정 */
+            border: 1px solid dimgray;
+
+            /* 두줄 라인을 한줄로 스타일 변경 */
+            border-collapse: collapse;
+        }
+        /* th, td에 대해서만 스타일 별도 지정 */
+        tr, td {
+            /* 테두리 안쪽 여백 */
+            padding: 15px;
+
+            /* 텍스트 중앙 정렬 */
+            text-align: center;
+        }
+
+        a:link {
+            /* 글자 색상을 녹색 */
+            color: cadetblue;
+            /* 배경색을 투명 */
+            background-color: transparent;
+            /* 별도의 장식을 하지 않음 */
+            text-decoration: none;
+        }
+
+        /* hover : 마우스가 올라갔을(over) 때 스타일 지정 */
+        a:hover {
+            /* 글자 색상을 녹색 */
+            color: dimgray;
+            /* 배경색을 투명 */
+            background-color: transparent;
+            /* 별도의 장식을 하지 않음 */
+            text-decoration: underline;
+        }
+
+        /* visited : 클릭 이후 스타일 지정 */
+        a:visited {
+            /* 글자 색상을 녹색 */
+            color: darkolivegreen;
+            /* 배경색을 투명 */
+            background-color: transparent;
+            /* 별도의 장식을 하지 않음 */
+            text-decoration: none;
+        }
+
+        </style>
+    </head>
+    
+    <!-- 
+    수업한 파일들을 index.html에서 링크로 관리하려고 함
+        - 각 파일명을 클릭하면 해당 페이지가 보여지게 만들기
+        - 테이블로 생성
+            * 컬럼명 : 파일명, 바로가기 
+    -->
+
+<body>
+    <table border="1" width="100%">
+        <caption>수업한 파일 정리 테이블</caption>
+        <tr>
+            <td>DAY</td>
+            <td>파일명</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td rowspan="11" style="background-color: azure;">DAY01</td>
+            <td>01_HTML_소개</td>
+            <td><a href="../day01/01_HTML_소개.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>02_HTML_태그소개_폰트사이즈_수평선_단락</td>
+            <td><a href="../day01/02_HTML_태그소개_폰트사이즈_수평선_단락.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>03_HTML_태그소개_링크_이미지</td>
+            <td><a href="../day01/03_HTML_태그소개_링크_이미지.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>04_html_태그소개_Style</td>
+            <td><a href="../day01/04_html_태그소개_Style.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>05_HTML_태그소개_텍스트-서식</td>
+            <td><a href="../day01/05_HTML_태그소개_텍스트-서식.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>06_HTML에_스타일_지정방식(1)</td>
+            <td><a href="../day01/06_HTML에_스타일_지정방식(1).html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>07_HTML에_스타일_지정방식(2)</td>
+            <td><a href="../day01/07_HTML에_스타일_지정방식(2).html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>08_HTML에_스타일_지정방식(3)</td>
+            <td><a href="../day01/08_HTML에_스타일_지정방식(3).html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>09_HTML에_스타일_지정_우선순위</td>
+            <td><a href="../day01/09_HTML에_스타일_지정_우선순위.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>10_HTML에_스타일_적용_ID_및_클래스_사용</td>
+            <td><a href="../day01/10_HTML에_스타일_적용_ID_및_클래스_사용.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>11_HTML_Daum인덱스페이지_만들기</td>
+            <td><a href="../day01/11_HTML_Daum인덱스페이지_만들기.html">바로가기</a></td>
+        </tr>
+
+        <tr>
+            <td rowspan="11" style="background-color: ivory;">DAY02</td>
+            <td>01_HTML_태그소개_a링크_스타일적용하기</td>
+            <td><a href="../day02/01_HTML_태그소개_a링크_스타일적용하기.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>02_HTML_태그소개_Table정의</td>
+            <td><a href="../day02/02_HTML_태그소개_Table정의.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>03_HTML_태그소개_Table스타일적용</td>
+            <td><a href="../day02/03_HTML_태그소개_Table스타일적용.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>04_HTML_태그소개_목록-표식_생성</td>
+            <td><a href="../day02/04_HTML_태그소개_목록-표식_생성.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>05_HTML_태그소개_블록태그_사용</td>
+            <td><a href="../day02/05_HTML_태그소개_블록태그_사용.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>06_HTML_태그소개_레이아웃_설정</td>
+            <td><a href="../day02/06_HTML_태그소개_레이아웃_설정.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>07_태그소개_내부프레임_iframe적용</td>
+            <td><a href="../day02/07_태그소개_내부프레임_iframe적용.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>08_자기소개</td>
+            <td><a href="../day02/08_자기소개.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>09_테이블_행단위_색변화하기</td>
+            <td><a href="../day02/09_테이블_행단위_색변화하기.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>10_수직_네비게이션</td>
+            <td><a href="../day02/10_수직_네비게이션.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>11_폼(Form)태그_사용하기(매우중요)</td>
+            <td><a href="../day02/11_폼(Form)태그_사용하기(매우중요).html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td rowspan="13" style="background-color: aliceblue;">DAY03</td>
+            <td>01_Javascript</td>
+            <td><a href="../day03/01_Javascript.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>02_Javascript</td>
+            <td><a href="../day03/02_Javascript.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>03_Javascript</td>
+            <td><a href="../day03/03_Javascript.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>04_Javascript</td>
+            <td><a href="../day03/04_Javascript.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>05_Javascript</td>
+            <td><a href="../day03/05_Javascript.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>06_Javascript</td>
+            <td><a href="../day03/06_Javascript.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>07_Javascript</td>
+            <td><a href="../day03/07_Javascript.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>08_Javascript</td>
+            <td><a href="../day03/08_Javascript.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>09_Javascript_문자열함수</td>
+            <td><a href="../day03/09_Javascript_문자열함수.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>10_Javascript_문자열함수_자바스크립트_위치이동</td>
+            <td><a href="../day03/10_Javascript_문자열함수_자바스크립트_위치이동.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>11_Javascript_문자열함수(2)</td>
+            <td><a href="../day03/11_Javascript_문자열함수(2).html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>12_Javascript_문자열함수(3)</td>
+            <td><a href="../day03/12_Javascript_문자열함수(3).html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>13_Javascript_입력폼검증</td>
+            <td><a href="../day03/13_Javascript_입력폼검증.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td rowspan="13" style="background-color: honeydew;">DAY03</td>
+            <td>01_jquery</td>
+            <td><a href="../day04/01_jquery.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>02_jquery</td>
+            <td><a href="../day04/02_jquery.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>03_jquery</td>
+            <td><a href="../day04/03_jquery.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>04_jquery</td>
+            <td><a href="../day04/04_jquery_CDN방식.html">바로가기</a></td>
+        </tr>
+        <tr>
+            <td>05_bootstriap</td>
+            <td><a href="../day04/05_bootstriap.html">바로가기</a></td>
+        </tr>
+        
+    </table>
+</body>
+</html>

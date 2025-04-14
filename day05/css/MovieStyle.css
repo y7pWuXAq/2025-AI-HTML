@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+html, body {
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    max-width: 300px;
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .card .imgBx {
+    width: 100%;
+    height: auto;
+    position: static;
+    z-index: 1;
+    box-shadow: none;
+}
+
+.container .card .imgBx img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.container .card .content {
+    margin-top: 10px;
+    text-align: center;
+    color: #111;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+/* title, year 별도 설정 */
+.container .card .content #title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 4px;
+}
+
+.container .card .content #year {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 8px;
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Hover 시 내용 확장 */
+.container .card:hover .content {
+    max-height: 300px; /* 충분히 큰 값으로 설정 */
+    opacity: 1;
+}

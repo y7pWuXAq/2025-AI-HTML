@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- MovieStyle CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/MovieStyle.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow px-6 py-4 md:px-16 flex justify-between items-center">
+        <a href="#">
+            <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoColored.svg" alt="로고" class="h-9">
+        </a>
+        <ul class="hidden md:flex gap-8 text-sm">
+            <li><a href="../day05/00_Home.html" class="hover:text-gray-500">Home</a></li>
+            <li><a href="#" class="hover:text-gray-500">Movie</a></li>
+            <li><a href="#" class="hover:text-gray-500">Book</a></li>
+            <li><a href="#" class="hover:text-gray-500">Webtoon</a></li>
+            <li><a href="#" class="hover:text-gray-500">Series</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+            
+            <button class="hidden md:block border border-gray-300 text-gray-700 px-5 py-2 rounded-full text-sm hover:bg-gray-100 transition">Login</button>
+        </div>
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="md:hidden hidden bg-white px-6 py-4">
+        <ul class="flex flex-col gap-4 text-sm">
+            <li><a href="../day05/00_Home.html">Home</a></li>
+            <li><a href="#">Movie</a></li>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">Webtoon</a></li>
+            <li><a href="#">Series</a></li>
+        </ul>
+        <button class="mt-4 border border-gray-300 text-gray-700 px-5 py-2 rounded-full text-sm w-full hover:bg-gray-100 transition">Login</button>
+    </div>
+    <br><br>
+
+    <!-- Movie Hover Effects -->
+    <div class="w-full flex justify-center">
+        <div class="container flex justify-center gap-8 flex-wrap max-w-7xl px-4">
+            <div class="w-full flex justify-center mb-6">
+                <h2 class="text-2xl font-bold text-center">🎬 영화 리스트</h2>
+            </div>
+            <!-- Movie 1 -->
+            <div class="card hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <div class="imgBx">
+                    <a href="https://youtu.be/VtGIduu9uDI?si=Tsu8PDzFSnUA3kiB" target="_blank">
+                        <img src="images/01_콘클라베.png" alt="콘클라베">
+                    </a>
+                </div>
+                <div class="content">
+                    <p id="title">콘클라베</p>
+                    <p id="year">2025</p>
+                    <p id="text">교황의 예기치 못한 죽음 이후 새로운 교황을 선출하는 ‘콘클라베’가 시작되고, 로렌스(랄프 파인즈)는 단장으로서 선거를 총괄하게 된다. 한편 당선에 유력했던 후보들이 스캔들에 휘말리면서 교활한 음모와 탐욕이 수면 위로 드러나는데…</p>
+                </div>
+            </div>
+
+            <!-- Movie 2 -->
+            <div class="card hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <div class="imgBx">
+                    <a href="https://youtu.be/MFXWhpcuIg4?si=6h5ZGDKO7cED9bkv" target="_blank">
+                        <img src="images/02_미키17.png" alt="미키17">
+                    </a>
+                </div>
+                <div class="content">
+                    <p id="title">미키 17</p>
+                    <p id="year">2025</p>
+                    <p id="text">위험한 일에 투입되는 소모품(익스펜더블)으로, 죽으면 다시 프린트되는 ‘미키’가 17번째 죽음의 위기를 겪던 중, 그가 죽은 줄 알고 ‘미키 18’이 프린트되면서 벌어지는 예측불허의 이야기를 그리는 영화</p>
+                </div>
+            </div>
+
+            <!-- Movie 3 -->
+            <div class="card hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <div class="imgBx">
+                    <a href="https://youtu.be/BlxdE3B_c2Q?si=uM9gtHbH925Q-QpO" target="_blank">
+                        <img src="images/03_퇴마록.png" alt="퇴마록">
+                    </a>
+                </div>
+                <div class="content">
+                    <p id="title">퇴마록</p>
+                    <p id="year">2024</p>
+                    <p id="text">수백 년간 은거하던 해동밀교의 145대 교주가 절대 악(惡)의 힘을 얻기 위한 의식을 시작한다. 해동밀교의 호법들은 그를 막기 위해 새로운 인물을 찾고, 파문 당한 신부 박윤규, 무공을 위해 밀교를 찾은 현암, 사건의 중심에 있는 예언의 아이 준후가 합세해 거대한 악에 맞서는데...</p>
+                </div>
+            </div>
+
+            <!-- Movie 4 -->
+            <div class="card hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <div class="imgBx">
+                    <a href="https://youtu.be/EPdzdAK3YJ8?si=TMy4stciQsWhkRF-" target="_blank">
+                        <img src="images/04_캡틴아메리카.png" alt="퇴마록">
+                    </a>
+                </div>
+                <div class="content">
+                    <p id="title">캡틴 아메리카: 브레이브 뉴 월드</p>
+                    <p id="year">2025</p>
+                    <p id="text">국제적인 사건의 중심에 서게 된 새로운 캡틴 아메리카 샘 윌슨이 대통령이 된 새디우스 로스와 재회 후 전 세계를 붉게 장악하려는 적의 사악한 음모뒤에 숨겨진 존재와 이유를 파헤쳐 나가는 액션 블록버스터</p>
+                </div>
+            </div>
+
+            <!-- Movie 5 -->
+            <div class="card hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <div class="imgBx">
+                    <a href="https://youtu.be/ly3QrgEZaQY?si=ZDge4As_ChZBfhxS" target="_blank">
+                        <img src="images/05_존윅4.png" alt="퇴마록">
+                    </a>
+                </div>
+                <div class="content">
+                    <p id="title">존 윅 4</p>
+                    <p id="year">2023</p>
+                    <p id="text">죽을 위기에서 살아난 ‘존 윅’은 ‘최고 회의’를 쓰러트릴 방법을 찾아낸다. 비로소 완전한 자유의 희망을 보지만, NEW 빌런 ‘그라몽 후작’과 전 세계의 최강 연합은 존 윅의 오랜 친구까지 적으로 만들어 버리고, 새로운 위기에 놓인 존 윅은 최후의 반격을 준비하는데..</p>
+                </div>
+            </div>
+
+            <!-- Movie 6 -->
+            <div class="card hover:scale-105 hover:shadow-xl transition-all duration-300 ease-in-out">
+                <div class="imgBx">
+                    <a href="https://youtu.be/DDOvnBnej_o?si=HlZ1nH_6AjinBc91" target="_blank">
+                        <img src="images/06_죽은시인의사회.png" alt="퇴마록">
+                    </a>
+                </div>
+                <div class="content">
+                    <p id="title">죽은 시인의 사회</p>
+                    <p id="year">1989</p>
+                    <p id="text">새로 부임한 영어 교사 ‘키팅’은 자신을 선생님이 아닌 “오, 캡틴, 나의 캡틴”이라 불러도 좋다고 말하며 독특한 수업 방식으로 학생들에게 충격을 안겨 준다. 점차 그를 따르게 된 학생들은 공부보다 중요한 인생의 의미를 하나씩 알아가고 새로운 도전을 시작한다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Review 영역 -->
+    <section class="mt-16 px-6 text-center">
+        <h2 class="text-2xl font-semibold mb-6">✒️ 내가 남긴 코멘트</h2>
+      
+        <div class="flex flex-wrap justify-center gap-6">
+            <!-- 리뷰 카드 1 -->
+            <div class="bg-white p-4 border rounded-md max-w-xs text-left">
+                <div class="flex justify-between items-center text-sm text-gray-500 mb-2">
+                <div class="flex items-center space-x-1">
+                    <!-- 별 아이콘 5개 -->
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                </div>
+                <span>22 Jan 2025</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-3">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.”</p>
+                <div class="flex items-center gap-2">
+                    <img src="./images/01_프로필.png" class="w-8 h-8 rounded-full" alt="user">
+                    <span class="font-medium text-gray-800">깜자</span>
+                </div>
+            </div>
+
+            <!-- 리뷰 카드 2 -->
+            <div class="bg-white p-4 border rounded-md max-w-xs text-left">
+                <div class="flex justify-between items-center text-sm text-gray-500 mb-2">
+                <div class="flex items-center space-x-1">
+                    <!-- 별 아이콘 5개 -->
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                </div>
+                <span>07 May 2024</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-3">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.”</p>
+                <div class="flex items-center gap-2">
+                    <img src="./images/02_프로필.png" class="w-8 h-8 rounded-full" alt="user">
+                    <span class="font-medium text-gray-800">망그러진 곰</span>
+                </div>
+            </div>
+
+            <!-- 리뷰 카드 3 -->
+            <div class="bg-white p-4 border rounded-md max-w-xs text-left">
+                <div class="flex justify-between items-center text-sm text-gray-500 mb-2">
+                <div class="flex items-center space-x-1">
+                    <!-- 별 아이콘 5개 -->
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                    <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.049.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 0 0 .95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 0 0-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.539 1.118l-2.8-2.034a1 1 0 0 0-1.176 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 0 0-.363-1.118L.98 6.72c-.784-.57-.382-1.81.587-1.81h3.461a1 1 0 0 0 .951-.69z" fill="#FF532E"/>
+                    </svg>
+                </div>
+                <span>17 Mar 2025</span>
+                </div>
+                <p class="text-gray-600 text-sm mb-3">“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.”</p>
+                <div class="flex items-center gap-2">
+                    <img src="./images/03_프로필.png" class="w-8 h-8 rounded-full" alt="user">
+                    <span class="font-medium text-gray-800">농담곰</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer 영역 -->
+    <footer class="mt-20 bg-white border-t px-6 md:px-16 py-10 text-sm text-gray-500 text-center">
+        <div class="max-w-2xl mx-auto">
+          <img src="https://raw.githubusercontent.com/prebuiltui/prebuiltui/main/assets/dummyLogo/dummyLogoDark.svg" class="h-8 mx-auto mb-4" alt="logo" />
+          <p>Copyright 2024 © Company name. All Right Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./js/01_Movie.html"></script>
+</body>
+</html>
