@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02_jquery</title>
+    <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+
+    <!-- jquery 정의 영역 -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#toggle").click(function(){
+                $("p").toggle();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>02_jquery :: toggle 기능 사용</h2>
+    <hr/>
+
+    <!--
+        toggle : 특정 태그를 숨겼다가 보였다가를 한번에 수행하는 함수
+
+        - 1. p태그 생성
+        - 2. 버튼 1개 생성
+        - 3. jquery 생성
+            - 버튼 클릭 시 p태그 보이기, 숨기기 반복
+            - toggle 함수 이용 > 버튼 클릭 시마다 보이기, 숨기기 처리
+    -->
+    
+    <p>내가 사라져볼게</p>
+
+    <button id="toggle">얍!</button>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01_jquery</title>
+    <!-- jQuery 라이브러리 불러들이기(보통 head 영역 상단에 위치) -->
+    <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+
+    <!-- 내부 방식 javascript 처리하기 -->
+    <script type="text/javascript">
+        /* 
+            - jQuery의 코드의 시작은 $로 시작
+            - $(document) : 해당 html의 문서 전체 정보를 의미
+            - $() : 괄호 안에는 document, 태그이름, 아이디속성, 클래스 속성 등이 정의됨
+                  : 기존의 getElementBy(), getElementByClassName() 등등과 유사
+            - ready : html 문서(DOM)가 완전히 로드외었는지 확인 후 실행됨
+            - function{} : 함수 내부에 사용할 코드를 작성
+        */
+        $(document).ready(function(){
+            // 코드 작성은 function 내부에 작성
+            $("#hide").click(function(){
+                // 처리코드
+                // p태그 정보를 찾아서 숨기기 : hide()함수 사용
+                $("p").hide();
+            });
+
+            // id가 show인 버튼 클릭 > p태그 보이기 show() 함수
+            $("#show").click(function(){
+                $("p").show();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>01_jQuery :: 사용방법</h2>
+    <hr/>
+
+    <p>
+        jQuery 라이브러리 사이트 : https://jquery.com
+    </p>
+    <br>
+
+    <!-- 버튼 2개 만들기 -->
+    <button id="hide">숨기기</button>
+    <button id="show">보이기</button>
+</body>
+</html>

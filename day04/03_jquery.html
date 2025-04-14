@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_jquery</title>
+    <script type="text/javascript" src="./jquery-3.7.1.min.js"></script>
+    
+    <!-- jquery 정의 영역 -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // id가 div1인 태그 클릭 이벤트
+            $("#div1").click(function(){
+                // $("#div2").toggle();
+
+                /* slideToggle() : 서서히 없어지고 서서히 보이게 
+                    - 속도 속성 : slow, fast, nomal, 직접입력(정수값 1000이 1초를 의미) */
+
+                $("#div2").slideToggle(1500);
+            });
+        });
+    </script>
+
+    <style>
+        div {
+            background-color: dimgray;
+            color: floralwhite;
+            text-align: center;
+            padding: 5px;
+            border: 1px solid floralwhite;
+        }
+
+        #div2 {
+            padding: 50px;
+        }
+    </style>
+
+</head>
+<body>
+    <h2>03_jquery :: slide toggle 사용</h2>
+    <hr/>
+
+    <!--
+        - 1. id가 div1인 div1, div태그 생성
+        - 2. 각 내용 자유롭게
+        - 3. 스타일 적용
+            - 배경색, 텍스트 중앙정렬, 여백 5px, 실선 표시, div2 padding 50px
+            - div1 클릭 > div2 보였다가 숨겼다가 toggle 함수 사용
+    -->
+
+    <div id="div1">
+        <p>Lorem ipsum</p>
+    </div>
+    <div id="div2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt aliquam odio repellat commodi, veniam amet fugiat nemo molestiae est.</p>
+    </div>
+</body>
+</html>
